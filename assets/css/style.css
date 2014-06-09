@@ -1,0 +1,120 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, img, ins, kbd, q, s, samp,
+small, strike, sub, sup, tt, var,
+u, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+A {
+  color: steelblue;
+}
+A:visited {
+  color: #8db3d3;
+}
+
+H1,
+H2,
+H3,
+H4,
+H5 {
+  z-index: 2;
+  font-family: Georgia, serif;
+  line-height: 1;
+  font-weight: normal;
+}
+
+h1 {
+  margin: 0 0 28.8px;
+  font-size: 43.2px;
+}
+
+h2 {
+  margin: 0 0 25.6px;
+  font-size: 38.4px;
+}
+
+h3 {
+  margin: 0 0 24.53333px;
+  font-size: 36.8px;
+}
+
+h4 {
+  margin: 0 0 18.13333px;
+  font-size: 27.2px;
+}
+
+h5 {
+  margin: 0 0 12.8px;
+  font-size: 19.2px;
+}
+
+BODY {
+  padding: 2em;
+  background: #EEE;
+  font: 16px/1.4 "Trebouchet MS", sans-serif;
+}
+
+.l-wrapper {
+  min-width: 500px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2em;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 1px solid #DDD;
+  -webkit-box-shadow: 0 0 1em -0.3em rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 1em -0.3em rgba(0, 0, 0, 0.3);
+  background-color: #FFF;
+}
+
+.list__term {
+  font-weight: bold;
+}
+
+.list__desc {
+  margin: .5em 0 1.5em 1em;
+}

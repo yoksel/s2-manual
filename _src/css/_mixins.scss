@@ -1,0 +1,47 @@
+$trans-dur: .3s;
+
+$color-gray: rgba(0,0,0,.05);
+$color-transp: rgba(255,255,255,0);
+$color-blue: transparentize(lightblue,.5);
+
+@mixin clear {
+    content: "";
+    display: table;
+    width: 100%;
+    }
+
+@mixin posabs {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    }
+
+@mixin linear-page {
+    background: linear-gradient(
+        $color-gray 1px, $color-transp 1px),
+    linear-gradient(90deg,
+        $color-blue 1px, $color-transp 1px) 90% top repeat-y;
+    background-size: #{$base-lh}em #{$base-lh}em;
+}
+
+@function shadows($max: 5, $color: white){
+    $out: null;
+    @for $i from 0 through $max {
+        $pos: #{$i}px;
+        $pos-n: -#{$pos};
+        $shadow-t-l: $pos-n $pos-n 0 $color;
+        $out: append( $out, $shadow-t-l, comma );
+        $shadow-t-r: $pos $pos-n 0 $color;
+        $out: append( $out, $shadow-t-r, comma );
+        $shadow-b-r: $pos $pos 0 $color;
+        $out: append( $out, $shadow-b-r, comma );
+        $shadow-b-l: $pos-n $pos 0 $color;
+        $out: append( $out, $shadow-b-l, comma );
+        }
+    $shadow-back: 0 5px 10px rgba(0,0,0,.8);
+    $out: append( $out, $shadow-back, comma );
+    @return $out;
+    }
+

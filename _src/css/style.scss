@@ -1,0 +1,28 @@
+@import '_mixins';
+@import '_reset';
+@import '_fonts';
+
+BODY {
+    padding: 2em;
+    background: #EEE;
+    font: #{$base-size}/#{$base-lh} "Trebouchet MS", sans-serif;
+    }
+
+.l-wrapper {
+    min-width: 500px;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2em;
+    box-sizing: border-box;
+    border: 1px solid #DDD;
+    box-shadow: 0 0 1em -.3em rgba(0,0,0,.3);
+    background-color: #FFF;
+    }
+
+.list__term {
+    font-weight: bold;
+    }
+.list__desc {
+    margin: .5em 0 1.5em 1em;
+    }
+

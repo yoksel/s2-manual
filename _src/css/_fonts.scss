@@ -1,0 +1,36 @@
+$base-size: 16px;
+$base-lh: 1.4;
+$font-headers: Georgia, serif;
+$link-color: steelblue;
+
+A {
+    color: $link-color;
+    &:visited {
+        color: lighten($link-color,20%);
+        }
+    }
+
+H1,
+H2,
+H3,
+H4,
+H5 {
+    z-index: 2;
+    font-family: $font-headers;
+    line-height: 1;
+    font-weight: normal;
+}
+
+$map-headers: (h1: 2.7, h2: 2.4, h3: 2.3, h4: 1.7, h5: 1.2);
+
+@mixin headers {
+    @each $header in map-keys($map-headers) {
+        $header-fsize: $base-size * map-get($map-headers, $header);
+        #{$header} {
+            margin: 0 0 $header-fsize/1.5;
+            font-size: #{$header-fsize};
+            }
+    }
+}
+
+@include headers;
