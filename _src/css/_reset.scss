@@ -1,16 +1,16 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, img, ins, kbd, q, s, samp,
-small, strike, sub, sup, tt, var,
-u, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+HTML, BODY, DIV, SPAN, APPLET, OBJECT, IFRAME,
+H1, H2, H3, H4, H5, H6, P, BLOCKQUOTE, PRE,
+A, ABBR, ACRONYM, ADDRESS, BIG, CITE, CODE,
+DEL, DFN, IMG, INS, KBD, Q, S, SAMP,
+SMALL, STRIKE, SUB, SUP, TT, VAR,
+U, CENTER,
+DL, DT, DD, OL, UL, LI,
+FIELDSET, FORM, LABEL, LEGEND,
+TABLE, CAPTION, TBODY, TFOOT, THEAD, TR, TH, TD,
+ARTICLE, ASIDE, CANVAS, DETAILS, EMBED,
+FIGURE, FIGCAPTION, FOOTER, HEADER, HGROUP,
+MENU, NAV, OUTPUT, RUBY, SECTION, SUMMARY,
+TIME, MARK, AUDIO, VIDEO {
     margin: 0;
     padding: 0;
     border: 0;
@@ -18,26 +18,28 @@ time, mark, audio, video {
     font: inherit;
     vertical-align: baseline;
 }
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-    display: block;
-}
-body {
+
+BODY {
     line-height: 1;
-}
-ol, ul {
+    }
+
+OL,
+UL {
     list-style: none;
 }
-blockquote, q {
+
+BLOCKQUOTE,
+Q {
     quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
+BLOCKQUOTE:before,
+BLOCKQUOTE:after,
+Q:before,
+Q:after {
     content: '';
     content: none;
 }
-table {
+TABLE {
     border-collapse: collapse;
     border-spacing: 0;
 }

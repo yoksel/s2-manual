@@ -21,7 +21,7 @@ H5 {
     font-weight: normal;
 }
 
-$map-headers: (h1: 2.7, h2: 2.4, h3: 2.3, h4: 1.7, h5: 1.2);
+$map-headers: (H1: 2.7, H2: 2.4, H3: 2.3, H4: 1.7, H5: 1.2);
 
 @mixin headers {
     @each $header in map-keys($map-headers) {
